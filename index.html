@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+            <label for="text">Wpisz tekst</label>
+            <input type="text" id="text">
+            <button onclick="getValue()">Wyslij</button>
+            <button onclick="changeFontColor()">Zmien kolor czcionki</button>
+            <button onclick="changeBackgroundColor()">Zmien kolor tła</button>
+            <button onclick="changeColor('Green')">Zmien kolor czcionki 2</button>
+            <button onclick="changeFontSize()">Zmien rozmiar czcionki</button>
+            <button onclick="clear()">Reset</button>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+        function getValue(){
+            var inputValue = document.getElementById("text").value;
+            console.log(inputValue);
+            document.getElementById("result").innerText = inputValue
+        }
+        function changeFontColor(){
+            document.getElementById("result").style.color = "yellow";
+        }
+        function changeBackgroundColor(){
+            document.getElementById("result").style.backgroundColor = "black";
+        }
+        function changeColor(color){
+            document.getElementById("result").style.color = color;
+        }
+        function changeFontSize(){
+            document.getElementById("result").style.fontSize = "32px";
+        }
+        function clear(){
+            document.getElementById("result").style.color = "black";
+            document.getElementById("result").style.backgroundColor = "white";
+            document.getElementById("result").style.fontSize = "1rem";
+        }
+    </script>
+</body>
+</html>

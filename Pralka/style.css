@@ -1,0 +1,67 @@
+body, html{
+    padding: 0;
+    margin: 0;
+}
+main{
+    display: flex;
+}
+.mainlewo{
+    width: calc(20% - 50px);
+    padding: 25px;
+    border-right: black 5px solid;
+}
+#mainsrodek{
+    width: calc(60% - 100px);
+    padding: 50px;
+}
+.mainprawo{
+    width: calc(20% - 50px);
+    float: right;
+    padding: 25px;
+    border-left: black 5px solid;
+}
+.mainlewo .tak{
+    width: 100%;
+}
+.mainlewo input{
+    width: 100%;
+}
+#A{
+    width: 50px;
+    height: 50px;
+}
+#A1{
+    width: 50px;
+    height: 50px;
+}
+#A2{
+    width: 50px;
+    height: 50px;
+}
+#A3{
+    width: 50px;
+    height: 50px;
+    color: yellow;
+    background-color: black;
+}
+#A4{
+    width: 50px;
+    height: 50px;
+    color: black;
+    background-color: yellow;
+}
+#A5{
+    width: 50px;
+    height: 50px;
+}
+.gora{
+    display: flex;
+    justify-content: space-between;
+}
+#reset{
+    width: 100%;
+    text-align: center;
+    margin-top: 800px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
